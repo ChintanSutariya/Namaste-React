@@ -27,10 +27,19 @@ const Body = () => {
     setListOfRestaurants(
       convertedJson?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
+        ? convertedJson?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+            ?.restaurants
+        : convertedJson?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
+            ?.restaurants
     );
     setFilteredRestaurants(
+      // convertedJson?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
       convertedJson?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants
+        ? convertedJson?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+            ?.restaurants
+        : convertedJson?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle
+            ?.restaurants
     );
   };
 
